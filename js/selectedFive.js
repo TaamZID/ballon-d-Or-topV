@@ -1,18 +1,24 @@
-document.getElementById("btn-submit").addEventListener("click", function () {
-  const submitField = document.getElementById("lm10");
-  const selectPlayer = submitField.innerText;
+const pList = [];
 
-  const showPlayer = document.createElement('li');
-  showPlayer = selectPlayer.innerText;
-//   showPlayer.innerText = selectPlayer;
-  list.appendChild(showPlayer);
-});
+function displayPlayer() {
+  const displayName = document.getElementById("display");
+  displayName.innerHTML = "";
 
-document.getElementById("btn-submit2").addEventListener("click", function () {
-  const submitField = document.getElementById("cr7");
-  const selectPlayer = submitField.innerText;
+  for (let i = 0; i < pList.length; i++) {
+    const name = pList[i].plName;
+    const li = document.createElement("li");
+    li.innerHTML = `<li>${i + 1}. ${name}</li>`;
+    displayName.appendChild(li);
+  }
+}
 
-  const showPlayer = document.getElementById("show-players");
-  const playerName = showPlayer.innerText;
-  showPlayer.innerText = selectPlayer;
-});
+function addToList(player) {
+  const pName = player.parentNode.children[0].innerText;
+
+  const pl = {
+    plName: pName,
+  };
+  console.log(pl);
+  pList.push(pl);
+  displayPlayer();
+}

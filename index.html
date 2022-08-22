@@ -29,7 +29,7 @@
           <div class="mx-10 border-solid border-2 border-[#434343] bg-black">
             <img class="object-cover h-48 w-40" src="images/benzema.webp" alt="" />
             <div class="text-center p-2">
-              <h1 id="lm10">Karim Benzema</h1>
+              <h1 id="kb9">Karim Benzema</h1>
               <span>36 Goals</span>
               <span>.</span>
               <span>40 Assist</span>
@@ -38,8 +38,9 @@
                 id="btn-submit"
                 class="bg-[#015196] px-6 mt-4"
                 type="submit"
+                onclick="addToList(this)"
               >
-                Select
+                Select 1
               </button>
             </div>
           </div>
@@ -55,6 +56,7 @@
                 id="btn-submit2"
                 class="bg-[#015196] px-6 mt-4"
                 type="submit"
+                onclick="addToList(this)"
               >
                 Select
               </button>
@@ -68,7 +70,7 @@
               <span>.</span>
               <span>40 Assist</span>
               <br />
-              <button class="bg-[#015196] px-6 mt-4" type="submit">
+              <button class="bg-[#015196] px-6 mt-4" type="submit" onclick="addToList(this)">
                 Select
               </button>
             </div>
@@ -78,11 +80,9 @@
             class="mx-10 border-[#434343] p-2 px-50 text-center font-bold bg-black w-1/5"
           >
             <h1>Selected - V</h1>
-            <ol class="list-decimal ml-8 mt-5">
-              <li>Neymar Jr</li>
-              <li>Lionel Messi</li>
-              <li>Cristiano Ronaldo</li>
-            </ol>
+            <ul id="display" class="ml-2 mt-5">
+              
+            </ul>
           </div>
         </div>
       </section>
@@ -106,15 +106,16 @@
                   id="btn-submit"
                   class="bg-[#015196] px-6 mt-4"
                   type="submit"
+                  onclick="addToList(this)"
                 >
                   Select
                 </button>
               </div>
             </div>
             <div class="mx-10 border-solid border-2 border-[#434343] bg-black">
-              <img class="object-cover h-48 w-40" src="images/cr7.jpg" alt="" />
+              <img class="object-cover h-48 w-40" src="images/vini.jpg" alt="" />
               <div class="text-center p-2">
-                <h1 id="cr7">Cristiano Ronaldo</h1>
+                <h1 id="cr7">Vini Pele</h1>
                 <span>36 Goals</span>
                 <span>.</span>
                 <span>40 Assist</span>
@@ -123,20 +124,21 @@
                   id="btn-submit2"
                   class="bg-[#015196] px-6 mt-4"
                   type="submit"
+                  onclick="addToList(this)"
                 >
                   Select
                 </button>
               </div>
             </div>
             <div class="mx-10 border-solid border-2 border-[#434343] bg-black">
-              <img class="object-cover h-48 w-40" src="images/njr.jpg" alt="" />
+              <img class="object-cover h-48 w-40" src="images/mbappe.jpeg" alt="" />
               <div class="text-center p-2">
-                <h1>Neymar Jr</h1>
+                <h1>Kylian Mbappe</h1>
                 <span>36 Goals</span>
                 <span>.</span>
                 <span>40 Assist</span>
                 <br />
-                <button class="bg-[#015196] px-6 mt-4" type="submit">
+                <button class="bg-[#015196] px-6 mt-4" type="submit" onclick="addToList(this)">
                   Select
                 </button>
               </div>

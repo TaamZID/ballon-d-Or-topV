@@ -1,12 +1,16 @@
+let managerAmount = 0;
+let coachAmount = 0;
+let Total = 0;
 document.getElementById("btn-total").addEventListener("click", function () {
   const managerField = document.getElementById("manager");
-  const managerAmount = managerField.value;
+  managerAmount = managerField.value;
 
   const coachField = document.getElementById("coach");
-  const coachAmount = coachField.value;
+  coachAmount = coachField.value;
 
   const budgetTotalElement = document.getElementById("total");
-  const Total =
+
+  Total =
     parseInt(managerAmount) +
     parseInt(coachAmount) +
     parseInt(currentBudgetTotal);
