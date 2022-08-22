@@ -29,18 +29,18 @@
           <div class="mx-10 border-solid border-2 border-[#434343] bg-black">
             <img class="object-cover h-48 w-40" src="images/benzema.webp" alt="" />
             <div class="text-center p-2">
-              <h1 id="kb9">Karim Benzema</h1>
+              <h1>Karim Benzema</h1>
               <span>36 Goals</span>
               <span>.</span>
               <span>40 Assist</span>
               <br />
               <button
                 id="btn-submit"
-                class="bg-[#015196] px-6 mt-4"
+                class="bg-[#015196] px-6 mt-4 disabled:opacity-25"
                 type="submit"
-                onclick="addToList(this)"
+                onclick="addToList(this);this.disabled = true;"
               >
-                Select 1
+                Select
               </button>
             </div>
           </div>
@@ -53,10 +53,10 @@
               <span>40 Assist</span>
               <br />
               <button
-                id="btn-submit2"
-                class="bg-[#015196] px-6 mt-4"
+                id="btn-submit"
+                class="bg-[#015196] px-6 mt-4 disabled:opacity-25"
                 type="submit"
-                onclick="addToList(this)"
+                onclick="addToList(this);this.disabled = true;"
               >
                 Select
               </button>
@@ -70,7 +70,7 @@
               <span>.</span>
               <span>40 Assist</span>
               <br />
-              <button class="bg-[#015196] px-6 mt-4" type="submit" onclick="addToList(this)">
+              <button id="btn-submit" class="bg-[#015196] px-6 mt-4 disabled:opacity-25" type="submit" onclick="addToList(this);this.disabled = true;">
                 Select
               </button>
             </div>
@@ -104,9 +104,9 @@
                 <br />
                 <button
                   id="btn-submit"
-                  class="bg-[#015196] px-6 mt-4"
+                  class="bg-[#015196] px-6 mt-4 disabled:opacity-25"
                   type="submit"
-                  onclick="addToList(this)"
+                  onclick="addToList(this);this.disabled = true;"
                 >
                   Select
                 </button>
@@ -121,10 +121,10 @@
                 <span>40 Assist</span>
                 <br />
                 <button
-                  id="btn-submit2"
-                  class="bg-[#015196] px-6 mt-4"
+                  id="btn-submit"
+                  class="bg-[#015196] px-6 mt-4 disabled:opacity-25"
                   type="submit"
-                  onclick="addToList(this)"
+                  onclick="addToList(this);this.disabled = true;"
                 >
                   Select
                 </button>
@@ -138,7 +138,7 @@
                 <span>.</span>
                 <span>40 Assist</span>
                 <br />
-                <button class="bg-[#015196] px-6 mt-4" type="submit" onclick="addToList(this)">
+                <button id="btn-submit" class="bg-[#015196] px-6 mt-4 disabled:opacity-25" type="submit" onclick="addToList(this);this.disabled = true;">
                   Select
                 </button>
               </div>
