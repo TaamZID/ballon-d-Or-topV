@@ -1,13 +1,7 @@
 let currentBudgetTotal = 0;
-let newBudgetAmount = 0;
 document.getElementById("btn-calculate").addEventListener("click", function () {
-  const budgetField = document.getElementById("budget");
-  newBudgetAmount = budgetField.value;
-
-  const budgetTotalElemet = document.getElementById("expenses");
-  currentBudgetTotal = 5 * parseFloat(newBudgetAmount);
-  budgetTotalElemet.innerText = currentBudgetTotal;
-  budgetField.value = "";
+  const newBudgetAmount = getInputFieldValueById("budget");
+  const budgetTotalElement = document.getElementById("expenses");
+  currentBudgetTotal = cnt * parseFloat(newBudgetAmount);
+  budgetTotalElement.innerText = currentBudgetTotal;
 });
-
-
