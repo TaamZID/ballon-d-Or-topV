@@ -25,16 +25,20 @@
       </header>
 
       <section class="bg-[#151515] text-white">
-        <div class="flex p-10 mx-40 ml-60">
+        <div class="lg:flex p-10 mx-10 ml-60">
           <div class="mx-10 border-solid border-2 border-[#434343] bg-black">
-            <img class="object-cover h-48 w-40" src="images/messi.jpg" alt="" />
+            <img class="object-cover h-48 w-40" src="images/benzema.webp" alt="" />
             <div class="text-center p-2">
-              <h1>Lionel Messi</h1>
+              <h1 id="lm10">Karim Benzema</h1>
               <span>36 Goals</span>
               <span>.</span>
-              <span>120 Assist</span>
+              <span>40 Assist</span>
               <br />
-              <button class="bg-[#015196] px-6 mt-4" type="submit">
+              <button
+                id="btn-submit"
+                class="bg-[#015196] px-6 mt-4"
+                type="submit"
+              >
                 Select
               </button>
             </div>
@@ -42,12 +46,16 @@
           <div class="mx-10 border-solid border-2 border-[#434343] bg-black">
             <img class="object-cover h-48 w-40" src="images/cr7.jpg" alt="" />
             <div class="text-center p-2">
-              <h1>Christiano Ronaldo</h1>
+              <h1 id="cr7">Cristiano Ronaldo</h1>
               <span>36 Goals</span>
               <span>.</span>
-              <span>120 Assist</span>
+              <span>40 Assist</span>
               <br />
-              <button class="bg-[#015196] px-6 mt-4" type="submit">
+              <button
+                id="btn-submit2"
+                class="bg-[#015196] px-6 mt-4"
+                type="submit"
+              >
                 Select
               </button>
             </div>
@@ -58,7 +66,7 @@
               <h1>Neymar Jr</h1>
               <span>36 Goals</span>
               <span>.</span>
-              <span>120 Assist</span>
+              <span>40 Assist</span>
               <br />
               <button class="bg-[#015196] px-6 mt-4" type="submit">
                 Select
@@ -67,12 +75,131 @@
           </div>
 
           <div
-            class="mx-10 border-[#434343] p-4 px-10 text-center font-bold bg-black"
+            class="mx-10 border-[#434343] p-2 px-50 text-center font-bold bg-black w-1/5"
           >
             <h1>Selected - V</h1>
+            <ol class="list-decimal ml-8 mt-5">
+              <li>Neymar Jr</li>
+              <li>Lionel Messi</li>
+              <li>Cristiano Ronaldo</li>
+            </ol>
           </div>
         </div>
       </section>
+
+      <section class="bg-[#151515] text-white">
+        <div class="lg:flex">
+          <div class="lg:flex p-10 mx-10 ml-40">
+            <div class="mx-10 border-solid border-2 border-[#434343] bg-black">
+              <img
+                class="object-cover h-48 w-40"
+                src="images/messi.jpg"
+                alt=""
+              />
+              <div class="text-center p-2">
+                <h1 id="lm10">Lionel Messi</h1>
+                <span>36 Goals</span>
+                <span>.</span>
+                <span>40 Assist</span>
+                <br />
+                <button
+                  id="btn-submit"
+                  class="bg-[#015196] px-6 mt-4"
+                  type="submit"
+                >
+                  Select
+                </button>
+              </div>
+            </div>
+            <div class="mx-10 border-solid border-2 border-[#434343] bg-black">
+              <img class="object-cover h-48 w-40" src="images/cr7.jpg" alt="" />
+              <div class="text-center p-2">
+                <h1 id="cr7">Cristiano Ronaldo</h1>
+                <span>36 Goals</span>
+                <span>.</span>
+                <span>40 Assist</span>
+                <br />
+                <button
+                  id="btn-submit2"
+                  class="bg-[#015196] px-6 mt-4"
+                  type="submit"
+                >
+                  Select
+                </button>
+              </div>
+            </div>
+            <div class="mx-10 border-solid border-2 border-[#434343] bg-black">
+              <img class="object-cover h-48 w-40" src="images/njr.jpg" alt="" />
+              <div class="text-center p-2">
+                <h1>Neymar Jr</h1>
+                <span>36 Goals</span>
+                <span>.</span>
+                <span>40 Assist</span>
+                <br />
+                <button class="bg-[#015196] px-6 mt-4" type="submit">
+                  Select
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="border-solid border-2 bg-black mt-10">
+            <div
+              class="border-[#434343] p-2 px-10 text-center font-bold bg-black"
+            >
+              <h1>Budget</h1>
+              <input
+                class="mt-2 bg-black border-solid border-2"
+                type="number"
+                name=""
+                id="budget"
+              />
+              <br />
+              <button
+                id="btn-calculate"
+                class="bg-[#015196] px-6 mt-4"
+                type="submit"
+              >
+                Calculate
+              </button>
+              <h2 class="mt-4">
+                Player Expenses: $<span id="expenses">00</span>
+              </h2>
+            </div>
+            <div class="text-center">
+              <h1 class="mt-6">Manager</h1>
+              <input
+                class="mt-2 bg-black border-solid border-2"
+                type="number"
+                name=""
+                id="manager"
+              />
+              <h1 class="mt-2">Coach</h1>
+              <input
+                class="mt-2 bg-black border-solid border-2"
+                type="number"
+                name=""
+                id="coach"
+              />
+              <br />
+              <button
+                id="btn-total"
+                class="bg-[#015196] px-6 mt-4"
+                type="submit"
+              >
+                Calculate Total
+              </button>
+              <h2 class="mt-4">Total: $<span id="total">00</span></h2>
+            </div>
+          </div>
+        </div>
+        <hr class="mt-10"></hr>
+        <footer class="p-10">
+          <p class="text-center">Copyright @ 2022 All Rights Reserved.</p>
+        </footer>
+      </section>
     </main>
+    <script src="js/selectedFive.js"></script>
+    <script src="js/budget.js"></script>
+    <script src="js/total.js"></script>
   </body>
 </html>
