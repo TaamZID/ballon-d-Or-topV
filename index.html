@@ -5,11 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
     <title>Ballon d'Or Award</title>
   </head>
   <body>
-    <header>
-      <h1>Ballon d'Or Top 5 List</h1>
-    </header>
+    <main class="font-serif">
+      <header class="header">
+        <div class="bg-black p-10 px-80 text-center">
+          <h1 class="font-bold text-[#FF5E19] text-[3rem]">
+            Ballon d'Or Top 5 List
+          </h1>
+          <p class="text-white">
+            The 2022 Ballon d'Or will be the 66th annual ceremony of the Ballon
+            d'Or, presented by France Football, and recognising the best
+            footballers in the world in the 2021–22 season. The nominees for the
+            ceremony were announced on 12 August 2022.
+          </p>
+        </div>
+      </header>
+
+      <section class="bg-[#151515] text-white">
+        <div class="flex p-10 mx-40 ml-60">
+          <div class="mx-10 border-solid border-2 border-[#434343] bg-black">
+            <img class="object-cover h-48 w-40" src="images/messi.jpg" alt="" />
+            <div class="text-center p-2">
+              <h1>Lionel Messi</h1>
+              <span>36 Goals</span>
+              <span>.</span>
+              <span>120 Assist</span>
+              <br />
+              <button class="bg-[#015196] px-6 mt-4" type="submit">
+                Select
+              </button>
+            </div>
+          </div>
+          <div class="mx-10 border-solid border-2 border-[#434343] bg-black">
+            <img class="object-cover h-48 w-40" src="images/cr7.jpg" alt="" />
+            <div class="text-center p-2">
+              <h1>Christiano Ronaldo</h1>
+              <span>36 Goals</span>
+              <span>.</span>
+              <span>120 Assist</span>
+              <br />
+              <button class="bg-[#015196] px-6 mt-4" type="submit">
+                Select
+              </button>
+            </div>
+          </div>
+          <div class="mx-10 border-solid border-2 border-[#434343] bg-black">
+            <img class="object-cover h-48 w-40" src="images/njr.jpg" alt="" />
+            <div class="text-center p-2">
+              <h1>Neymar Jr</h1>
+              <span>36 Goals</span>
+              <span>.</span>
+              <span>120 Assist</span>
+              <br />
+              <button class="bg-[#015196] px-6 mt-4" type="submit">
+                Select
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="mx-10 border-[#434343] p-4 px-10 text-center font-bold bg-black"
+          >
+            <h1>Selected - V</h1>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
