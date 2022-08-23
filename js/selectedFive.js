@@ -14,7 +14,8 @@ function displayPlayer() {
       displayName.appendChild(li);
     }
   } else {
-    return alert("Can't select more than 5 Players!");
+    alert("Can't select more than 5 Players!");
+    displayName.removeChild(li);
   }
 }
 
